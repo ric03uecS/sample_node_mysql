@@ -10,6 +10,8 @@ services:
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
+build_image: shippable/minv2:beta
+  
 # Make folders for the reports, and create the SQL db
 before_script:
   - mkdir -p shippable/testresults
